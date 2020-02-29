@@ -8,7 +8,7 @@
      3. Menyimpan output ke dalam file ```selected.csv```;
      
      Fungsi awk kedua untuk:
-     1. Menjumlahkan profit dikelompokkan berdasarkan region;
+     1. Menjumlahkan profit dikelompokkan berdasarkan ```reg[]```;
      2. Menampilakn hasil awk
      3. Mengurutkan dari yang terkecil ke yang terbesar
      4. Mengambil hasil yang teratas
