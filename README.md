@@ -1,11 +1,19 @@
 # **SoalShiftSISOP20_modul1_A08**
 
 ## 1 Soal 1
-   - soal1.sh\
+   - **soal1.sh**\
      Fungsi awk pertama untuk:
      1. Menghapus kolom selain 11, 13, 17 dan 21;
      2. Mengganti separator dengan ```|```;
      3. Menyimpan output ke dalam file ```selected.csv```;
+     
+     Fungsi awk kedua untuk:
+     1. Menjumlahkan profit dikelompokkan berdasarkan region;
+     2. Menampilakn hasil awk
+     3. Mengurutkan dari yang terkecil ke yang terbesar
+     4. Mengambil hasil yang teratas
+     
+     
 
         
 ## Soal 2
