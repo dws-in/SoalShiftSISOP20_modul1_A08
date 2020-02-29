@@ -21,11 +21,11 @@
      4. Mengambil 2 hasil teratas ```head -n 2```;
      
      Fungsi awk ke-4 untuk:
-     1. Mengidentifikasi apakah region adalah ```"Central"```
+     1. Mengidentifikasi apakah region adalah ```"Central"``` dan state adalah ```"Texas"``` atau ```"Illinois"```;
      2. Menjumlahkan profit dikelompokkan berdasarkan ```sta[]```;
      3. Menampilakn hasil awk;
      3. Mengurutkan dari yang terkecil ke yang terbesar;
-     4. Mengambil 2 hasil teratas ```head -n 2```;
+     4. Mengambil 2 hasil teratas ```head -n 10```;
      
      
 
