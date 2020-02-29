@@ -29,66 +29,32 @@
         
 ## Soal 2
    - **soal2.sh**\
-     Script ini berfungsi untuk:
+     Urutan kerja script:
      1. Mengecek input nama file apakah alphabet
      2. Mengebuat password yang berisi huruf kecil dan huruf besar serta angka
      3. Menyimpan hasil password ke nama file yang dimasukan
      
    - **soal2_coba.sh**\
-     Script ini berfungsi untuk:
+     Urutan kerja script:
      1. Mengenkripsi nama file yang dimasukkan
      2. Mengganti nama dengan nam baru hasil enkripsi ```mv```
      2. Menyimpan kunci dari jam ```(date +"%H")``` dienkripsinya nama file ke dalam file tersebut
      
    - **soal2_wadaw.sh**\
-     Script ini berfungsi untuk:
+     Urutan kerja script:
      1. Mengambil kunci dari jam yang disimpan di file terenkripsi
      2. Mendekripsi nama file yang terenkripsi kembali ke nama semula
      
 ## Soal 3
 
-grep 'Location' wget.log > location.log
-
-        d=1
-        k=1
-        dir=$(pwd)
-
-        for ((i=1; i<29; i++))
-        do
-                for((j=1; j<29; j++))
-                do
-                        if [[ $i == $j ]]
-                        then
-                                continue
-                        elif  cmp -s "pdkt_kusuma_"$i"" "pdkt_kusuma_"$j"" ;
-                        then
-                                mv "pdkt_kusuma_"$j""  "duplicate_"$d""
-                                mv "duplicate_"$d"" duplicate
-                                d=$((d+1))
-                        else
-                        break
-                        fi
-                done
-
-                if [ -f "pdkt_kusuma_"$i"" ]
-                then
-                        mv "pdkt_kusuma_"$i"" "kenangan_"$k
-                        mv "kenangan_"$k"" kenangan
-                        k=$((k+1))
-                fi
-        done
-
-mv "wget.log" "wget.log.bak"
-mv "location.log" "location.log.bak"
-
-
-grep 'Location' wget.log > location.log berarti mencari kata 'Location' dalam tiap baris di wget.log dan menyimpannya di location.log
-#dir=$(pwd) berarti var dir berisi lokasi current directory saat ini
-#for ((i=1; i<29; i++)) dan for((j=1; j<29; j++)) digunakan untuk melakukan looping pengecekan
-#if [ $i == $j ] digunakan agar file tidak compare file dengan nomor yang sama
-#cmp -s "pdkt_kusuma_"$i"" "pdkt_kusuma_"$j"" berarti membandingkan apakah file $i sama dengan $j atau tidak
-#mv "pdkt_kusuma_"$j"" "duplicate_"$d"" berarti jika file sama maka file $j mengganti nama jadi duplicate_$d
-#mv "duplicate_"$d"" duplicate untuk memindahkan ke directory duplicate setelah ganti nama
-#d=$((d+1)) berarti setiap kali ada file yang sama var d akan melakukan increnment
-# [ -f "pdkt_kusuma_"$i"" ] then .... berfungsi untuk memindahkan gambar yang tidak memiliki duplikat ke kenangan.
+Urutan kerja script:
+1. grep 'Location' wget.log > location.log berarti mencari kata 'Location' dalam tiap baris di wget.log dan menyimpannya di location.log
+2. dir=$(pwd) berarti var dir berisi lokasi current directory saat ini
+3. for ((i=1; i<29; i++)) dan for((j=1; j<29; j++)) digunakan untuk melakukan looping pengecekan
+4. if [ $i == $j ] digunakan agar file tidak compare file dengan nomor yang sama
+5. cmp -s "pdkt_kusuma_"$i"" "pdkt_kusuma_"$j"" berarti membandingkan apakah file $i sama dengan $j atau tidak
+6. mv "pdkt_kusuma_"$j"" "duplicate_"$d"" berarti jika file sama maka file $j mengganti nama jadi duplicate_$d
+7. mv "duplicate_"$d"" duplicate untuk memindahkan ke directory duplicate setelah ganti nama
+8. d=$((d+1)) berarti setiap kali ada file yang sama var d akan melakukan increnment
+9. [ -f "pdkt_kusuma_"$i"" ] then .... berfungsi untuk memindahkan gambar yang tidak memiliki duplikat ke kenangan.
 
