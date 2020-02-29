@@ -46,15 +46,15 @@
      2. Mendekripsi nama file yang terenkripsi kembali ke nama semula
      
 ## Soal 3
-
-Urutan kerja script:
-1. grep 'Location' wget.log > location.log berarti mencari kata 'Location' dalam tiap baris di wget.log dan menyimpannya di location.log
-2. dir=$(pwd) berarti var dir berisi lokasi current directory saat ini
-3. for ((i=1; i<29; i++)) dan for((j=1; j<29; j++)) digunakan untuk melakukan looping pengecekan
-4. if [ $i == $j ] digunakan agar file tidak compare file dengan nomor yang sama
-5. cmp -s "pdkt_kusuma_"$i"" "pdkt_kusuma_"$j"" berarti membandingkan apakah file $i sama dengan $j atau tidak
-6. mv "pdkt_kusuma_"$j"" "duplicate_"$d"" berarti jika file sama maka file $j mengganti nama jadi duplicate_$d
-7. mv "duplicate_"$d"" duplicate untuk memindahkan ke directory duplicate setelah ganti nama
-8. d=$((d+1)) berarti setiap kali ada file yang sama var d akan melakukan increnment
-9. [ -f "pdkt_kusuma_"$i"" ] then .... berfungsi untuk memindahkan gambar yang tidak memiliki duplikat ke kenangan.
+- **soal3.sh**\
+  Urutan kerja script:
+  1. grep 'Location' wget.log > location.log berarti mencari kata 'Location' dalam tiap baris di wget.log dan menyimpannya di location.log
+  2. dir=$(pwd) berarti var dir berisi lokasi current directory saat ini
+  3. for ((i=1; i<29; i++)) dan for((j=1; j<29; j++)) digunakan untuk melakukan looping pengecekan
+  4. if [ $i == $j ] digunakan agar file tidak compare file dengan nomor yang sama
+  5. cmp -s "pdkt_kusuma_"$i"" "pdkt_kusuma_"$j"" berarti membandingkan apakah file $i sama dengan $j atau tidak
+  6. mv "pdkt_kusuma_"$j"" "duplicate_"$d"" berarti jika file sama maka file $j mengganti nama jadi duplicate_$d
+  7. mv "duplicate_"$d"" duplicate untuk memindahkan ke directory duplicate setelah ganti nama
+  8. d=$((d+1)) berarti setiap kali ada file yang sama var d akan melakukan increnment
+  9. [ -f "pdkt_kusuma_"$i"" ] then .... berfungsi untuk memindahkan gambar yang tidak memiliki duplikat ke kenangan.
 
