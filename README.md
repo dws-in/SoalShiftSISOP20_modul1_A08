@@ -37,8 +37,8 @@
    - **soal2_coba.sh**\
      Script ini berfungsi untuk:
      1. Mengenkripsi nama file yang dimasukkan
-     2. Mengganti nama dengan nam baru hasil enkripsi
-     2. Menyimpan kunci dari jam dienkripsinya nama file ke dalam file tersebut
+     2. Mengganti nama dengan nam baru hasil enkripsi ```mv```
+     2. Menyimpan kunci dari jam ```(date +"%H")``` dienkripsinya nama file ke dalam file tersebut
      
    - **soal2_wadaw.sh**\
      Script ini berfungsi untuk:
@@ -46,9 +46,6 @@
      2. Mendekripsi nama file yang terenkripsi kembali ke nama semula
      
 ## Soal 3
-
-
-Soal 3:
 
 grep 'Location' wget.log > location.log
 
