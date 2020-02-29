@@ -1,14 +1,14 @@
 # **SoalShiftSISOP20_modul1_A08**
 
-## - Soal 1
-        -soal1.sh
-               Fungsi awk pertama untuk
-               1. Menghapus kolom selain 11, 13, 17 dan 21
-               2. Mengganti separator dengan ```|```
-               3. Menyimpan output ke dalam file ```selected.csv```
+## 1 Soal 1
+   soal1.sh
+                Fungsi awk pertama untuk
+                1. Menghapus kolom selain 11, 13, 17 dan 21
+                2. Mengganti separator dengan ```|```
+                3. Menyimpan output ke dalam file ```selected.csv```
         
-## - Soal 2
-## - Soal 3
+## Soal 2
+## Soal 3
 
 
 Soal 3:
