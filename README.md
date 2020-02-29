@@ -28,19 +28,19 @@
      4. Mengambil 2 hasil teratas ```head -n 10```;
         
 ## Soal 2
-   - **soal2.sh**
+   - **soal2.sh**\
      Script ini berfungsi untuk:
      1. Mengecek input nama file apakah alphabet
      2. Mengebuat password yang berisi huruf kecil dan huruf besar serta angka
      3. Menyimpan hasil password ke nama file yang dimasukan
      
-   - **soal2_coba.sh**
+   - **soal2_coba.sh**\
      Script ini berfungsi untuk:
      1. Mengenkripsi nama file yang dimasukkan
      2. Mengganti nama dengan nam baru hasil enkripsi
      2. Menyimpan kunci dari jam dienkripsinya nama file ke dalam file tersebut
      
-   - **soal2_wadaw.sh**
+   - **soal2_wadaw.sh**\
      Script ini berfungsi untuk:
      1. Mengambil kunci dari jam yang disimpan di file terenkripsi
      2. Mendekripsi nama file yang terenkripsi kembali ke nama semula
