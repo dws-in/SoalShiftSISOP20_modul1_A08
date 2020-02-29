@@ -2,16 +2,30 @@
 
 ## 1 Soal 1
    - **soal1.sh**\
-     Fungsi awk pertama untuk:
+     Fungsi awk ke-1 untuk:
      1. Menghapus kolom selain 11, 13, 17 dan 21;
      2. Mengganti separator dengan ```|```;
      3. Menyimpan output ke dalam file ```selected.csv```;
      
-     Fungsi awk kedua untuk:
+     Fungsi awk ke-2 untuk:
      1. Menjumlahkan profit dikelompokkan berdasarkan ```reg[]```;
-     2. Menampilakn hasil awk
-     3. Mengurutkan dari yang terkecil ke yang terbesar
-     4. Mengambil hasil yang teratas
+     2. Menampilakn hasil awk;
+     3. Mengurutkan dari yang terkecil ke yang terbesar;
+     4. Mengambil hasil yang teratas ```head -n 1```;
+     
+     Fungsi awk ke-3 untuk:
+     1. Mengidentifikasi apakah region adalah ```"Central"```
+     2. Menjumlahkan profit dikelompokkan berdasarkan ```sta[]```;
+     3. Menampilakn hasil awk;
+     3. Mengurutkan dari yang terkecil ke yang terbesar;
+     4. Mengambil 2 hasil teratas ```head -n 2```;
+     
+     Fungsi awk ke-4 untuk:
+     1. Mengidentifikasi apakah region adalah ```"Central"```
+     2. Menjumlahkan profit dikelompokkan berdasarkan ```sta[]```;
+     3. Menampilakn hasil awk;
+     3. Mengurutkan dari yang terkecil ke yang terbesar;
+     4. Mengambil 2 hasil teratas ```head -n 2```;
      
      
 
