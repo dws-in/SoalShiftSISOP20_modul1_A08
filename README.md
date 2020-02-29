@@ -1,3 +1,5 @@
+**SoalShiftSISOP20_modul1_A08**
+
 Soal 3:
 
 grep 'Location' wget.log > location.log
